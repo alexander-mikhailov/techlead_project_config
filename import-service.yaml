@@ -12,6 +12,12 @@ management:
       exposure:
         include: refresh, info, health, metrics, scheduledtasks, threaddump, heapdump
 
+opentracing:
+  jaeger:
+    udp-sender:
+      host: jaeger
+      port: 6831
+
 app:
   scheduling:
     enable: true
